@@ -1,0 +1,3 @@
+# Private review preview.
+User-agent: *
+Disallow: /

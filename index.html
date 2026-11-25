@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Collins Market post review</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <img class="logo" src="assets/collins-market-logo.png" alt="Collins Market">
+      <h1>Collins Market post review</h1>
+      <p class="subtitle">Drafts for the rest of November and December 2026</p>
+      <p class="intro" id="intro"></p>
+      <p class="publication-note">Nothing on this page gets published. Cory schedules only what you approve.</p>
+    </div>
+  </header>
+  <div class="review-bar">
+    <div class="wrap progress-row">
+      <span id="count" role="status">Loading drafts...</span>
+      <progress id="progress" aria-label="Posts reviewed" max="24" value="0"></progress>
+    </div>
+  </div>
+  <main class="wrap">
+    <noscript>Enable JavaScript to load and review the drafts.</noscript>
+    <p id="load-error" role="alert" hidden></p>
+    <form id="review" novalidate hidden>
+      <div id="posts"></div>
+      <section class="details panel" aria-labelledby="events-heading">
+        <h2 id="events-heading">Upcoming downtown events</h2>
+        <label for="events">Any downtown events we should include in a post or story?</label>
+        <textarea id="events" rows="4"></textarea>
+        <div class="contact">
+          <div>
+            <label for="name">Name (optional)</label>
+            <input id="name" type="text" autocomplete="name" placeholder="Rich">
+          </div>
+          <div>
+            <label for="contact">Email or phone (optional)</label>
+            <input id="contact" type="text">
+          </div>
+        </div>
+        <button class="primary" type="submit">Submit review</button>
+      </section>
+    </form>
+    <section id="result" class="details panel" aria-labelledby="result-heading" hidden>
+      <h2 id="result-heading" tabindex="-1">Your review summary is ready</h2>
+      <p id="delivery" role="status"></p>
+      <div class="result-actions">
+        <a id="email-draft" class="primary">Open email draft</a>
+        <a id="download" class="secondary" download="collins-market-review.txt">Download summary</a>
+      </div>
+      <label for="summary">Full summary</label>
+      <textarea id="summary" readonly rows="12"></textarea>
+    </section>
+  </main>
+  <template id="post-template">
+    <article class="post panel">
+      <header class="post-heading">
+        <time></time>
+        <h3></h3>
+        <p class="metadata"></p>
+      </header>
+      <figure class="preview">
+        <div class="image-mat"><img loading="lazy" decoding="async" alt=""></div>
+        <figcaption></figcaption>
+      </figure>
+      <div class="post-content">
+        <h4>Caption</h4>
+        <p class="caption"></p>
+        <p class="calendar-note" hidden></p>
+        <div class="confirm" hidden>
+          <h4>Please confirm</h4>
+          <ul></ul>
+        </div>
+        <fieldset>
+          <legend>Decision</legend>
+          <div class="choices"></div>
+        </fieldset>
+        <p class="error" aria-live="polite" hidden></p>
+        <label class="notes-label">
+          <span>Notes (optional)</span>
+          <textarea class="notes" rows="2"></textarea>
+        </label>
+        <label class="graphic-label" hidden>
+          Request this graphic
+          <textarea class="graphic" rows="3"></textarea>
+        </label>
+      </div>
+    </article>
+  </template>
+</body>
+</html>
