@@ -20,7 +20,9 @@
       "image": "assets/nov26-thanksgiving-post-draft.jpg",
       "imageNote": "Graphic needed. A square feed version of the existing 'thank you for supporting local' sign photo would work, or a fresh, warm in-store photo from Rich or Bekah. Do not add opening hours. Draft mockup awaiting approval.",
       "mockupHint": "If you make a draft mockup, use the sign photo already in nov-17-review-r5.png (the wooden 'thank you for supporting local' sign). Square format, Collins look, short type, no hours. Label the mockup as a draft.",
-      "placeholders": ["Do not claim Thanksgiving hours unless Rich confirms them."],
+      "placeholders": [
+        "Do not claim Thanksgiving hours unless Rich confirms them."
+      ],
       "graphicNeeded": true
     },
     {
@@ -52,7 +54,9 @@
       "caption": "This year, Staunton's Christmas Parade adds its first Pet Grand Marshal alongside the human Grand Marshal. Catch the parade Monday, November 30, at 7 p.m.",
       "image": "assets/nov-18-review-r5.jpg",
       "imageNote": "Preview graphic. Finished Reel still needed.",
-      "placeholders": ["Please confirm the Pet Grand Marshal fact and the Monday, November 30, 7 p.m. parade time."],
+      "placeholders": [
+        "Please confirm the Pet Grand Marshal fact and the Monday, November 30, 7 p.m. parade time."
+      ],
       "graphicNeeded": false
     },
     {
@@ -68,7 +72,9 @@
       "caption": "Small Business Saturday is a good day to explore downtown. Make Collins Market part of your stroll.",
       "image": "assets/nov-19-review-r5.jpg",
       "imageNote": "Existing draft feed graphic.",
-      "placeholders": ["Please confirm Saturday, November 28 hours. Do not add an unconfirmed offer."],
+      "placeholders": [
+        "Please confirm Saturday, November 28 hours. Do not add an unconfirmed offer."
+      ],
       "graphicNeeded": false
     },
     {
@@ -84,7 +90,9 @@
       "image": "assets/nov28-sbs-story-draft.jpg",
       "imageNote": "Graphic needed. A 9:16 Story crop of the existing Small Business Saturday window photo would work, or a fresh photo of the storefront or sidewalk on Saturday. Draft mockup awaiting approval.",
       "mockupHint": "If you make a draft mockup, crop or reframe the window/OPEN photo from nov-19-review-r5.png into a 9:16 Story. Keep the Collins look. Do not add hours.",
-      "placeholders": ["Please confirm Saturday, November 28 hours before any hours are added."],
+      "placeholders": [
+        "Please confirm Saturday, November 28 hours before any hours are added."
+      ],
       "graphicNeeded": true
     },
     {
@@ -100,7 +108,9 @@
       "caption": "Downtown Staunton's Christmas Parade starts at 7 p.m. tonight. See you downtown for Winter Magic!",
       "image": "assets/nov-20-review-r5.jpg",
       "imageNote": "Existing draft feed graphic. Keep the 2025 parade photo label.",
-      "placeholders": ["Please reconfirm parade time, theme, and date: Monday, November 30, 7 p.m., Winter Magic."],
+      "placeholders": [
+        "Please reconfirm parade time, theme, and date: Monday, November 30, 7 p.m., Winter Magic."
+      ],
       "graphicNeeded": false
     },
     {
@@ -116,7 +126,9 @@
       "caption": "Tropic Tango or Ocean Blue, which one would you reach for?\n\nVote below, then tell us the snack you'd pair with it.\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
       "image": "assets/calypso-tropic-ocean-screenshot.jpg",
       "imageNote": "Client-supplied screenshot, November 20.",
-      "placeholders": ["Please confirm Tropic Tango and Ocean Blue are in stock before this goes out."],
+      "placeholders": [
+        "Please confirm Tropic Tango and Ocean Blue are in stock before this goes out."
+      ],
       "graphicNeeded": false
     },
     {
@@ -147,7 +159,9 @@
       "caption": "If you could sit down with a Hotel 24 South guest from 1924, what would you ask?\n\nThe hotel opened in May 1924. We'd love to hear what you're curious about: daily life, downtown shops, or what a visit cost back then.\n\nA little downtown history from Collins Market.",
       "image": "assets/nov-14-branding-r4.jpg",
       "imageNote": "Existing preview graphic. Finished Reel still needed. Confirm permission to use the Hotel 24 South photo.",
-      "placeholders": ["Please confirm we may use the Hotel 24 South photo. Finished Reel still needed."],
+      "placeholders": [
+        "Please confirm we may use the Hotel 24 South photo. Finished Reel still needed."
+      ],
       "graphicNeeded": false
     },
     {
@@ -163,7 +177,9 @@
       "caption": "Paradise Punch or Grapeberry? Pick your Calypso side.\n\nTell us your choice, and who you think would pick the other one.\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
       "image": "assets/calypso-paradise-grapeberry-screenshot.jpg",
       "imageNote": "Client-supplied screenshot, November 20.",
-      "placeholders": ["Please confirm Paradise Punch and Grapeberry are in stock before this goes out."],
+      "placeholders": [
+        "Please confirm Paradise Punch and Grapeberry are in stock before this goes out."
+      ],
       "graphicNeeded": false
     },
     {
@@ -178,54 +194,61 @@
       "caption": "What's your midweek pickup: a good cup of coffee, or something cold?\n\nStop by Collins Market and grab what sounds right.\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
       "image": "assets/IMG_2061.jpg",
       "imageNote": "Approved style graphic: for a Good Cup.",
-      "placeholders": ["Please confirm coffee is still a regular in-store offering that week."],
+      "placeholders": [
+        "Please confirm coffee is still a regular in-store offering that week."
+      ],
       "graphicNeeded": false
     },
     {
-      "id": "dec10-story-downtown-stop",
+      "id": "dec10-story-midweek-errand",
       "date": "2026-12-10",
       "dateLabel": "Thursday, December 10",
-      "title": "Your downtown stop",
+      "title": "What's the errand today?",
       "type": "Story",
       "series": "Story bank",
       "platform": "Facebook + Instagram",
       "existing": false,
-      "caption": "A familiar stop on West Beverley.\n\nComing downtown today? Make Collins Market part of the stroll.",
-      "image": "assets/IMG_2059.jpg",
-      "imageNote": "Story bank: reuse the approved Your Downtown Stop hanging-sign graphic.",
-      "placeholders": [],
-      "graphicNeeded": false
+      "caption": "What's the midweek errand today? A drink, a snack, or a quick look around?\n\nIf you're already downtown, make Collins Market part of the walk.\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
+      "image": null,
+      "imageNote": "Graphic needed. Please send a current in-store or sidewalk photo that is not the hanging-sign \"Your Downtown Stop\" artwork already used on October 23. A counter, doorway, or Beverley Street sidewalk shot in the approved Collins look would work. No hours and no stock photos.",
+      "placeholders": [
+        "Please send a new in-store or sidewalk photo. Do not reuse the hanging-sign Your Downtown Stop artwork."
+      ],
+      "graphicNeeded": true
     },
     {
-      "id": "dec11-clocktower-reel",
+      "id": "dec11-wharf-dff",
       "date": "2026-12-11",
       "dateLabel": "Friday, December 11",
-      "title": "The Clocktower Building",
+      "title": "A Wharf with no water",
       "type": "Reel",
       "series": "Downtown Fact Friday",
       "platform": "Facebook + Instagram",
-      "existing": true,
-      "existingNote": "The Clocktower Reel v8 is already produced and is sitting in the Draft Bank for a future Friday. The Story version ran on November 13. This would be the feed Reel, not a repeat of that Story.",
-      "caption": "A bowling alley inside the Clocktower Building? Yep.\n\nBuilt in 1890 as Staunton's first YMCA, this Beverley Street landmark once housed a gym, running track, library, auditorium, and a bowling alley.\n\nA whole lot of community life behind that familiar clock. Next time you're downtown, look up.\n\nDid you know this piece of Staunton history?\n\nDowntown Fact Fridays, presented by Collins Market.\n\n#CollinsMarket #DowntownStaunton #StauntonVA #FactFriday #StauntonHistory",
-      "image": "assets/nov-7-clocktower-story-r1.jpg",
-      "imageNote": "Preview still from the Clocktower series. The finished Reel v8 already exists and would be used for this feed post.",
-      "placeholders": [],
-      "graphicNeeded": false
+      "existing": false,
+      "caption": "Why does Staunton have a Wharf with no waterfront?\n\nThe name comes from its days as a shipping point, not from a river landing. Next time you're downtown, look toward the warehouses and the tracks and you'll see why the name stuck.\n\nHave you walked that part of town?\n\nDowntown Fact Fridays, presented by Collins Market.\n\n#CollinsMarket #DowntownStaunton #StauntonVA #FactFriday #StauntonHistory",
+      "image": null,
+      "imageNote": "Graphic needed, then a finished Reel. Please send a current photo of the Wharf warehouse fronts or the railroad area, filmed from public spaces. Do not invent extra historical details. Fact source: the Fact Friday Ideas tab (idea 2) and dhr.virginia.gov/historic-registers/132-0014.",
+      "placeholders": [
+        "Need a photo of the Wharf warehouse fronts or the railroad area, taken from a public space, and permission to use it."
+      ],
+      "graphicNeeded": true
     },
     {
-      "id": "dec14-slush-tot",
+      "id": "dec14-tot-instock",
       "date": "2026-12-14",
       "dateLabel": "Monday, December 14",
-      "title": "This or that: a cool treat",
+      "title": "This or that",
       "type": "Post",
       "series": "Monday This or That",
       "platform": "Facebook + Instagram",
       "existing": false,
-      "caption": "Strawberry, mango, or blue raspberry?\n\nWhich Jarritos slush would you pick today?\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
-      "image": "assets/IMG_2060.jpg",
-      "imageNote": "Approved style graphic showing Jarritos Strawberry, Mango, and Blue Raspberry. Confirm the machine still has these three flavors that week.",
-      "placeholders": ["Please confirm the slush machine is running and that Strawberry, Mango, and Blue Raspberry are the flavors that week."],
-      "graphicNeeded": false
+      "caption": "[Item A] or [Item B], which one would you pick today?\n\nTell us your choice, and what you'd grab with it.\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
+      "image": null,
+      "imageNote": "Graphic needed. Please send two in-stock products, photographed side by side, in the same style as the Calypso posts. Do not reuse the Jarritos slush graphic from October 25. OTV will set the type and caption once the items are confirmed.",
+      "placeholders": [
+        "Rich or Bekah (or Michael Saunders) to name and photograph two in-stock items."
+      ],
+      "graphicNeeded": true
     },
     {
       "id": "dec16-story-sweetness",
@@ -239,7 +262,9 @@
       "caption": "Need a little something sweet in the middle of the week?\n\nWhat's your usual treat when you stop at Collins Market?",
       "image": "assets/IMG_2070.jpg",
       "imageNote": "Story bank: reuse the approved A Little Sweetness graphic. Confirm the pictured item is in stock.",
-      "placeholders": ["Please confirm the pictured treat is in stock that week."],
+      "placeholders": [
+        "Please confirm the pictured treat is in stock that week."
+      ],
       "graphicNeeded": false
     },
     {
@@ -254,7 +279,9 @@
       "caption": "A future president was born right here in Staunton.\n\nWoodrow Wilson was born on December 28, 1856. His birthplace still stands in town.\n\nHave you walked past it?\n\nDowntown Fact Fridays, presented by Collins Market.\n\n#CollinsMarket #DowntownStaunton #StauntonVA #FactFriday #StauntonHistory",
       "image": null,
       "imageNote": "Graphic needed. Please send a photo of the Woodrow Wilson Birthplace exterior or the historical marker, and confirm we may use it. Do not invent extra historical details. Fact source: woodrowwilson.org/proud-virginian.",
-      "placeholders": ["Need a photo of the Woodrow Wilson Birthplace (exterior or marker) and permission to use it."],
+      "placeholders": [
+        "Need a photo of the Woodrow Wilson Birthplace (exterior or marker) and permission to use it."
+      ],
       "graphicNeeded": true
     },
     {
@@ -269,23 +296,27 @@
       "caption": "[Item A] or [Item B], which one would you pick?\n\nTell us your choice, and what you'd grab with it.\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
       "image": null,
       "imageNote": "Graphic needed. Please send two in-stock products for a This or That, photographed side by side, in the same style as the Calypso posts. OTV will set the type and caption once the items are confirmed.",
-      "placeholders": ["Rich or Bekah (or Michael Saunders) to name and photograph two in-stock items."],
+      "placeholders": [
+        "Rich or Bekah (or Michael Saunders) to name and photograph two in-stock items."
+      ],
       "graphicNeeded": true
     },
     {
-      "id": "dec23-story-touches",
+      "id": "dec23-story-last-stops",
       "date": "2026-12-23",
       "dateLabel": "Wednesday, December 23",
-      "title": "It's the little touches",
+      "title": "A few last stops",
       "type": "Story",
       "series": "Story bank",
       "platform": "Facebook + Instagram",
       "existing": false,
       "caption": "A few last-minute stops before the holiday?\n\nWe're here on West Beverley if you need a little something.",
-      "image": "assets/IMG_2062.jpg",
-      "imageNote": "Story bank: reuse the approved It's the little touches graphic (branded bags).",
-      "placeholders": ["Please confirm December 23 hours if you want hours mentioned. Do not add hours until confirmed."],
-      "graphicNeeded": false
+      "image": null,
+      "imageNote": "Graphic needed. Please send a current in-store or storefront photo with a simple December feel (counter, window, or a small seasonal detail). Do not reuse the branded-bags \"It's the little touches\" artwork from October 29. No stock photos. Do not add hours.",
+      "placeholders": [
+        "Do not add hours on this Story."
+      ],
+      "graphicNeeded": true
     },
     {
       "id": "dec24-christmas-post",
@@ -299,7 +330,9 @@
       "caption": "Christmas Eve downtown has its own quiet charm.\n\nIf you're out and about, we'd love to see you at Collins Market. [Confirm December 24 hours.]\n\nWhat's the one thing you still need before tomorrow?\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
       "image": null,
       "imageNote": "Graphic needed. Please send a current in-store or storefront photo with a Christmas or Christmas Eve feel (window, counter, or a simple seasonal detail). No stock photos. Do not add hours on the graphic until they are confirmed.",
-      "placeholders": ["Please confirm December 24 hours. Leave the hours placeholder in the caption until then."],
+      "placeholders": [
+        "Please confirm December 24 hours. Leave the hours placeholder in the caption until then."
+      ],
       "graphicNeeded": true
     },
     {
@@ -314,7 +347,9 @@
       "caption": "Merry Christmas from Collins Market.\n\nWishing you a warm day with the people who matter most.",
       "image": null,
       "imageNote": "Graphic needed. A simple Christmas greeting in the Collins look is enough. Do not claim the store is open or closed until Rich confirms Christmas Day hours.",
-      "placeholders": ["Please confirm whether the store is open on December 25. Do not put hours on this Story until then."],
+      "placeholders": [
+        "Please confirm whether the store is open on December 25. Do not put hours on this Story until then."
+      ],
       "graphicNeeded": true
     },
     {
@@ -329,7 +364,9 @@
       "caption": "[Item A] or [Item B], which one are you reaching for?\n\nDrop your pick below.\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
       "image": null,
       "imageNote": "Graphic needed. Please send two in-stock products for a This or That, photographed side by side, in the same style as the Calypso posts. OTV will set the type and caption once the items are confirmed.",
-      "placeholders": ["Rich or Bekah (or Michael Saunders) to name and photograph two in-stock items."],
+      "placeholders": [
+        "Rich or Bekah (or Michael Saunders) to name and photograph two in-stock items."
+      ],
       "graphicNeeded": true
     },
     {
@@ -359,7 +396,9 @@
       "caption": "New Year's Eve in downtown Staunton.\n\nHowever you spend tonight, we're grateful you made Collins Market part of your year. [Confirm December 31 hours.]\n\nWhat are you hoping for in 2027?\n\n#CollinsMarket #DowntownStaunton #StauntonVA",
       "image": null,
       "imageNote": "Graphic needed. Please send a current storefront or in-store photo we can use for a simple New Year's Eve greeting. No stock photos. Do not add hours on the graphic until they are confirmed.",
-      "placeholders": ["Please confirm December 31 hours. Leave the hours placeholder in the caption until then."],
+      "placeholders": [
+        "Please confirm December 31 hours. Leave the hours placeholder in the caption until then."
+      ],
       "graphicNeeded": true
     },
     {
@@ -374,7 +413,9 @@
       "caption": "Happy New Year from Collins Market.\n\nSee you in 2027.",
       "image": null,
       "imageNote": "Graphic needed. A simple New Year greeting in the Collins look is enough. Do not claim New Year's Day hours until Rich confirms them.",
-      "placeholders": ["Please confirm January 1 hours if you want them mentioned. Do not add them until then."],
+      "placeholders": [
+        "Please confirm January 1 hours if you want them mentioned. Do not add them until then."
+      ],
       "graphicNeeded": true
     }
   ]
