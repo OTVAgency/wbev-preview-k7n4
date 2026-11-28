@@ -30,6 +30,17 @@ function renderPost(post) {
   }
   if (post.published) {
     showMissingImage("Published Story", post.imageNote);
+  } else if (post.video) {
+    const video = document.createElement("video");
+    video.controls = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    video.src = post.video;
+    video.poster = "open-sign-story-v2-poster.jpg";
+    video.setAttribute("aria-label", post.title + " video preview");
+    video.style.cssText = "display:block;width:100%;max-height:640px;object-fit:contain;background:#181411";
+    image.replaceWith(video);
+    description.textContent = post.imageNote;
   } else if (post.image) {
     image.alt = post.title + (post.graphicNeeded ? " draft mockup" : " visual preview");
     image.addEventListener("error", () => showMissingImage("Preview unavailable", post.imageNote));
@@ -194,6 +205,46 @@ async function init() {
   data.posts = lineup.map(([date,title,type,series,caption,note,image]) => ({
     id: 'cm-' + date, date, dateLabel: new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(date)), title,type,series,caption,platform:'Facebook + Instagram',image:image || '',imageNote:(image ? 'Existing preview. ' : 'Graphic needed. ') + note,placeholders:[note],graphicNeeded:!image,existing:false
   }));
+
+  // Owner's November 27 revision directions. These are not client approvals.
+  const revisionNotes = {
+  "2026-12-04": "Reel in production: create the Hotel 24 South feature for this slot. Final video and photo permissions still needed.",
+  "2026-12-05": "Reshare the Hotel 24 South Reel after its final approval.",
+  "2026-12-09": "Replacement beverage-center photo requested. Check prior coffee graphic usage before selecting a fresh visual; final caption follows selection.",
+  "2026-12-10": "Current behind-the-counter store photo needed.",
+  "2026-12-11": "Choose a different downtown fact from the existing fact list, then verify the fact and select its visual. Topic and final caption pending.",
+  "2026-12-14": "Rich to select and photograph two in-stock products, one sweet and one salty.",
+  "2026-12-16": "Replacement graphic needed. The previous Something sweet graphic has already been used.",
+  "2026-12-18": "New graphic requested using a warm store interior or window photograph.",
+  "2026-12-21": "Gift-card graphic proposed for this slot instead of the shopping-fuel comparison. Confirm the existing graphic and final caption.",
+  "2026-12-23": "Please provide exact holiday hours so the holiday-hours graphic can be created.",
+  "2026-12-24": "Photo requested: decorated store interior, existing decorations, or decorations on the white table with the downtown backdrop.",
+  "2026-12-25": "Simple Merry Christmas greeting graphic needed. Fact Friday pauses for Christmas.",
+  "2026-12-28": "Two confirmed in-stock products needed for the final This or That of 2026.",
+  "2026-12-30": "Choose a real store photo from this year.",
+  "2026-12-31": "Exterior store photo proposed for the thank-you post; final visual needed."
+};
+  for (const post of data.posts) {
+    if (revisionNotes[post.date]) {
+      post.imageNote = revisionNotes[post.date];
+      post.placeholders = [revisionNotes[post.date]];
+    }
+    if (["2026-12-04","2026-12-09","2026-12-16"].includes(post.date)) {
+      post.image = "";
+      post.graphicNeeded = true;
+    }
+  }
+  const openSign = data.posts.find(post => post.date === "2026-12-02");
+  Object.assign(openSign, {
+    title:"Storefront welcome (open-sign Story v2)",
+    image:"",
+    video:"Collins-Market-Open-Sign-Story-v2-Final.mp4",
+    graphicNeeded:false,
+    imageNote:"Final v2 preview: 10 seconds, soft soul music, picture first and logo entrance at 2.5 seconds. Tap play and turn sound on.",
+    placeholders:["Reusable Story. Confirm the store is open when it runs."],
+    sources:[{label:"Open or download the Story video",url:"Collins-Market-Open-Sign-Story-v2-Final.mp4"}]
+  });
+
   Object.assign(data.posts[0], {published:true,graphicNeeded:false,placeholders:[],title:"The Wharf with no water? · Published",caption:"Final v5 video with embedded narration and captions. Published to Facebook and Instagram Stories on November 27.",imageNote:"Published November 27: Facebook at 1:45 p.m. and Instagram at 1:46 p.m. Eastern. Stories only.",existing:true,existingNote:"Completed. Included for reference; no new approval is needed."});
   data.posts[0].sources = [{label:'Watch the final Wharf video (v5)',url:'https://drive.google.com/file/d/1Q43W8leymZKbnm9j2f5eKH2-g_3hDK4X/view'},{label:'Virginia DHR: Wharf Area Historic District',url:'https://www.dhr.virginia.gov/historic-registers/132-0014/'}];
   data.intro = 'Hi Rich! Thanksgiving and the Wharf Downtown Fact Friday Story are already posted. The completed Wharf video is included below for reference. Upcoming review begins with Small Business Saturday and the parade reminder. December includes 10 feed posts/Reels and 7 Stories. Please review the concepts and captions below. Final artwork is still needed where noted.';
@@ -205,7 +256,7 @@ async function init() {
   const heading = document.createElement('h2');
   heading.textContent = 'The December direction';
   const detail = document.createElement('p');
-  detail.textContent = 'Warm store photography, downtown history and product comparisons. Hotel 24 South is December 4. Please confirm products for December 14, 21 and 28, holiday hours, and photo permissions. Blackfriars has already been covered. The Pet Grand Marshal and Wilson birthday concepts are removed.';
+  detail.textContent = 'Warm store photography, downtown history and product comparisons. Hotel 24 South is December 4. Please confirm products for December 14 and 28, the gift-card option for December 21, holiday hours, and requested store photos. Blackfriars has already been covered. The Pet Grand Marshal and Wilson birthday concepts are removed.';
   overview.append(heading,detail);
   byId('posts').before(overview);
   byId("intro").textContent = data.intro.split(" Nothing on this page gets published.")[0];
@@ -257,3 +308,4 @@ init().catch(() => {
   message.textContent = "The drafts could not load. Open this page on a static server and refresh.";
   message.hidden = false;
 });
+
