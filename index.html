@@ -7,6 +7,11 @@
   <title>Collins Market post review</title>
   <link rel="stylesheet" href="styles.css">
   <script src="review.js?v=20261127-wharf-v5" defer></script>
+<style>
+#review > .details, #posts fieldset, #posts .notes-label, #posts .graphic-label, #result, .review-bar #count, .review-bar #progress {display:none!important}
+#feedback iframe {width:100%;height:900px;border:0;background:white}
+.review-bar .progress-row {justify-content:center}
+</style>
 </head>
 <body>
   <header class="hero">
@@ -20,6 +25,7 @@
   </header>
   <div class="review-bar">
     <div class="wrap progress-row">
+      <a class="primary" href="#feedback">Submit approvals and changes</a>
       <span id="count" role="status">Loading drafts...</span>
       <progress id="progress" aria-label="Posts reviewed" max="19" value="0"></progress>
     </div>
@@ -55,6 +61,12 @@
       </div>
       <label for="summary">Full summary</label>
       <textarea id="summary" readonly rows="12"></textarea>
+    </section>
+    <section id="feedback" class="details panel" aria-labelledby="feedback-heading">
+      <h2 id="feedback-heading">Approvals and change requests</h2>
+      <p>Review the visuals and captions above, then submit your decisions in the form below. You can review selected posts and return for the rest. Nothing publishes automatically.</p>
+      <p><a href="https://form.jotform.com/263308298774066" target="_blank" rel="noopener noreferrer">Open the review form in a separate tab</a></p>
+      <iframe title="Collins Market content review form" src="https://form.jotform.com/263308298774066" loading="lazy" allow="fullscreen"></iframe>
     </section>
   </main>
   <template id="post-template">
