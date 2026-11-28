@@ -28,7 +28,9 @@ function renderPost(post) {
     title.textContent = label;
     description.replaceChildren(title, note);
   }
-  if (post.image) {
+  if (post.published) {
+    showMissingImage("Published Story", post.imageNote);
+  } else if (post.image) {
     image.alt = post.title + (post.graphicNeeded ? " draft mockup" : " visual preview");
     image.addEventListener("error", () => showMissingImage("Preview unavailable", post.imageNote));
     image.src = post.image;
@@ -63,6 +65,12 @@ function renderPost(post) {
     confirm.hidden = false;
   }
 
+  if (post.published) {
+    card.querySelector("fieldset").remove();
+    card.querySelector(".notes-label").remove();
+    card.querySelector(".graphic-label").remove();
+    return { post, card };
+  }
   const choices = card.querySelector(".choices");
   const error = card.querySelector(".error");
   error.id = post.id + "-error";
@@ -186,8 +194,9 @@ async function init() {
   data.posts = lineup.map(([date,title,type,series,caption,note,image]) => ({
     id: 'cm-' + date, date, dateLabel: new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(date)), title,type,series,caption,platform:'Facebook + Instagram',image:image || '',imageNote:(image ? 'Existing preview. ' : 'Graphic needed. ') + note,placeholders:[note],graphicNeeded:!image,existing:false
   }));
-  data.posts[0].sources = [{label:'Virginia DHR: Wharf Area Historic District',url:'https://www.dhr.virginia.gov/historic-registers/132-0014/'}];
-  data.intro = 'Hi Rich! Thanksgiving is already posted. We begin with the Wharf Downtown Fact Friday Story on November 27, followed by Small Business Saturday and the parade reminder. December includes 10 feed posts/Reels and 7 Stories. Please review the concepts and captions below. Final artwork is still needed where noted.';
+  Object.assign(data.posts[0], {published:true,graphicNeeded:false,placeholders:[],title:"The Wharf with no water? · Published",caption:"Final v5 video with embedded narration and captions. Published to Facebook and Instagram Stories on November 27.",imageNote:"Published November 27: Facebook at 1:45 p.m. and Instagram at 1:46 p.m. Eastern. Stories only.",existing:true,existingNote:"Completed. Included for reference; no new approval is needed."});
+  data.posts[0].sources = [{label:'Watch the final Wharf video (v5)',url:'https://drive.google.com/file/d/1Q43W8leymZKbnm9j2f5eKH2-g_3hDK4X/view'},{label:'Virginia DHR: Wharf Area Historic District',url:'https://www.dhr.virginia.gov/historic-registers/132-0014/'}];
+  data.intro = 'Hi Rich! Thanksgiving and the Wharf Downtown Fact Friday Story are already posted. The completed Wharf video is included below for reference. Upcoming review begins with Small Business Saturday and the parade reminder. December includes 10 feed posts/Reels and 7 Stories. Please review the concepts and captions below. Final artwork is still needed where noted.';
   document.querySelector('.subtitle').textContent = 'November 27 through December 31, 2026';
   document.querySelector('.publication-note').textContent = 'Review only. Nothing publishes automatically. Concept approval is separate from final artwork and release approval. December 11 remains a topic to confirm.';
   document.querySelector('button[type="submit"]').textContent = 'Create review summary';
@@ -219,7 +228,7 @@ async function init() {
       posts.append(section);
     }
     const review = renderPost(post);
-    reviews.push(review);
+    if (!post.published) reviews.push(review);
     section.append(review.card);
   }
 
